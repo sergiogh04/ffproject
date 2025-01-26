@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Characters</title>
+</head>
+<body>
+    <h1>Characters</h1>
+    <ul>
+        {% for character in characters %}
+            <li>{{ character.name }}</li>
+        {% empty %}
+            <li>No genres available.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'games:index' %}">Back to game list</a>
+</body>
+</html>
+
+</body>
+</html>

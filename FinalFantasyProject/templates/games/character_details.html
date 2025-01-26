@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Details</title>
+</head>
+<body>
+    <h1>Character Details</h1>
+    <ul>
+        <li>Name: {{ character.name }}</li>
+        <li>Jobs: {{ character.jobs }}</li>
+        <li>Description: {{ character.character_description }}</li>
+    </ul>
+    <a href="{% url 'games:index' %}">Back to game list</a>
+</body>
+</html>

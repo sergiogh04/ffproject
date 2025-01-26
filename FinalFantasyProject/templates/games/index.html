@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Final Fantasy Wiki</h1>
+    <ul>
+        {% for game in games %}
+            <h3><a href="{% url 'games:game_details' game.id %}"> {{ game.title }} ({{ game.release_date }})</a></h3>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'games:genre_list'  %}">Genres of the saga</a>
+    <br>
+    <a href="{% url 'games:character_list' %}">Todos los personajes</a>
+
+</body>
+</html>

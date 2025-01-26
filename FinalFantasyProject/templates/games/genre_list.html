@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Genres</title>
+</head>
+<body>
+    <h1>Genres</h1>
+    <ul>
+        {% for genre in genres %}
+            <li>{{ genre.genre_name }}</li>
+        {% empty %}
+            <li>No genres available.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'games:index' %}">Back to game list</a>
+</body>
+</html>
