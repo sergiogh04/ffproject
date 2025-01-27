@@ -12,8 +12,9 @@
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Login</button>
-
+    <a href="{% url 'games:index' %}">
+    <button type="button">Login</button>
+</a>
 
   </form>
   
